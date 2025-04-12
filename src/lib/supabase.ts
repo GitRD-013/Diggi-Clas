@@ -1,8 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
 
-// Environment variables should be defined in a .env file at the project root
-const supabaseUrl = process.env.REACT_APP_SUPABASE_URL || '';
-const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY || '';
+// Supabase configuration
+const supabaseUrl = 'https://yfcoybolivatpllfzubr.supabase.co';
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlmY295Ym9saXZhdHBsbGZ6dWJyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ0NTM3NDQsImV4cCI6MjA2MDAyOTc0NH0.okDkn1ixZ2HPmArXZy6--Dv29C_73lhtxAV11V3kZI0';
 
 // Create a single supabase client for the entire app
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
