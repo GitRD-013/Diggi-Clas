@@ -11,4 +11,9 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
   },
+  // Make REACT_APP_ variables available as import.meta.env.REACT_APP_*
+  define: {
+    'process.env.REACT_APP_SUPABASE_URL': JSON.stringify(process.env.REACT_APP_SUPABASE_URL),
+    'process.env.REACT_APP_SUPABASE_ANON_KEY': JSON.stringify(process.env.REACT_APP_SUPABASE_ANON_KEY),
+  },
 }); 
